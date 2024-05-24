@@ -41,7 +41,11 @@ category = [
 ]
 
 difficulty = ['easy', 'medium', 'hard']
-question_type = ['True/False', 'Multiple Choice']
+
+# question_type = ['True/False', 'Multiple Choice']
+question_type = ['boolean', 'multiple']
 
 new_data = {"response_code":0,"results":[{"type":"multiple","difficulty":"medium","category":"General Knowledge","question":"Whose greyscale face is on the kappa emoticon on Twitch?","correct_answer":"Josh DeSeno","incorrect_answers":["Justin DeSeno","John DeSeno","Jimmy DeSeno"]},
                                          {"type":"multiple","difficulty":"medium","category":"General Knowledge","question":"Where does water from Poland Spring water bottles come from?","correct_answer":"Maine, United States","incorrect_answers":["Hesse, Germany","Masovia, Poland","Bavaria, Poland"]}]}
+
+tf_data = {"response_code":0,"results":[{"type":"boolean","difficulty":"medium","category":"Mythology","question":"The Japanese god Izanagi successfully returned his wife Izanami from the Underworld.","correct_answer":"False","incorrect_answers":["True"]}]}
