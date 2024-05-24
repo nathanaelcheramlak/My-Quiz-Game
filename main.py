@@ -1,8 +1,5 @@
 from Quiz import Quizzer, MainHelper
-#import data
 from api import FetchApi
-
-question_type = ['boolean', 'multiple']
 
 def oneSelected():
     print(MainHelper.question_id_parser()) # Prints a list of categories with their question_id
@@ -19,7 +16,6 @@ def oneSelected():
     print("Couldn't find the required number of questions.")
 
     while quiz1.still_has_questions():
-        # print('I have returned False')
         quiz1.next_question()
     print("======================")
     print(f"You got a total score of {quiz1.score}/{quiz1.question_number}")
@@ -52,6 +48,7 @@ def twoSelected():
         print("New difficulty is set to ", new_difficulty)
         quiz1.difficulty = new_difficulty
         quiz1.question_size = new_question_size
+        question_type = ['boolean', 'multiple']
         quiz1.question_type = question_type[new_question_type-1]
         print(f"Question type set to {quiz1.question_type}")
 
